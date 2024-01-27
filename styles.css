@@ -11,6 +11,9 @@ body {
   min-height: 100vh;
   min-width: 100vh;
   background-color: #0e080e;
+  background-image: radial-gradient(rgba(236, 255, 211, 0.02) 2.5px, transparent 4px);
+  background-size: 13px 13px;
+  background-position: 5.5vh 5.5vh;
 }
 
 a {
@@ -29,9 +32,9 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  border-bottom: 1px dotted #a5639c6e;
+  border-bottom: 1px solid #a5639c6e;
   min-height: 60px;
-  height: 7vh;
+  height: 50px;
   max-height: 70px;
 }
 
@@ -49,6 +52,7 @@ nav {
   display: flex;
   align-items: center;
   font-weight: 400;
+  cursor:default;
 }
 
 .nav-left a {
@@ -57,8 +61,6 @@ nav {
   position: relative;
   
 }
-
-
 
 .nav-left a:hover::after {
   display: inline-block;
@@ -89,4 +91,64 @@ nav {
   border: none;
   border-radius: 10vw;
   cursor: pointer;
+  transition: all 0.25s
+}
+
+
+.nav-right:hover {
+  color: #380857;
+  background-color: white;
+}
+
+/* Main content alignment */
+main{
+  margin-top: 55px;
+  color: white;
+  min-height: 100vh;
+
+}
+
+
+/* Home section */
+
+article{
+  height: fit-content;
+  padding: 5% 10% 0;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+article h3{
+  font-weight: 300;
+  font-size: 30px;
+  color: rgb(201, 201, 201)
+
+}
+
+
+article h1{
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 80px;
+}
+
+.details{
+  margin-top: 50px;
+  border-left: 1px solid rgb(201, 201, 201);
+  padding-left: 15px;
+  font-weight: 300;
+  color: rgb(201, 201, 201);
+  
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  
+}
+
+.profile{
+  
 }
